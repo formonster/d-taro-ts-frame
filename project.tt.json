@@ -1,0 +1,9 @@
+{
+  "miniprogramRoot": "./",
+  "projectname": "d-taro-ts-frame",
+  "appid": "testAppId",
+  "setting": {
+    "es6": false,
+    "minified": false
+  }
+}
