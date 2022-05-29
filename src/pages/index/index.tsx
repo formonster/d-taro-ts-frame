@@ -1,23 +1,13 @@
-import { Component } from 'react'
+import React from 'react'
 import { View, Text } from '@tarojs/components'
+import Counter from '@/features/counter'
 import './index.less'
 
-export default class Index extends Component {
-  componentWillMount() {}
-
-  componentDidMount() {}
-
-  componentWillUnmount() {}
-
-  componentDidShow() {}
-
-  componentDidHide() {}
-
-  render() {
-    return (
-      <View className='index'>
-        <Text>Hello world!</Text>
-      </View>
-    )
-  }
+export default function Index() {
+  return (
+    <View className='index'>
+      <Text>Hello world!</Text>
+      <Counter />
+    </View>
+  )
 }

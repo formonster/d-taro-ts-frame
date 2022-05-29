@@ -1,3 +1,5 @@
+const path = require('path')
+
 const config = {
   projectName: 'd-taro-ts-frame',
   date: '2022-5-28',
@@ -9,6 +11,11 @@ const config = {
   },
   sourceRoot: 'src',
   outputRoot: 'dist',
+  alias: {
+    '@/*': path.resolve(__dirname, '..', 'src/*'),
+    '@/features': path.resolve(__dirname, '..', 'src/features'),
+    '@/store': path.resolve(__dirname, '..', 'src/store'),
+  },
   plugins: [],
   defineConstants: {},
   copy: {
