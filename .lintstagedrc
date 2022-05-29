@@ -1,6 +1,6 @@
 {
   "**/*": "prettier --write --ignore-unknown",
-  "*.js": "eslint --cache -no ignore --fix",
+  "*.js": "eslint --cache --fix",
   "*.css": "stylelint --fix",
   "*.{js,css,md}": "prettier --write"
 }
