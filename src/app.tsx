@@ -1,6 +1,8 @@
 import { Component } from 'react'
 import { Provider } from 'react-redux'
 import { store } from '@/store'
+import 'taro-ui/dist/style/index.scss'
+import 'windi.css'
 import './app.less'
 
 class App extends Component {

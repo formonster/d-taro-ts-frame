@@ -16,7 +16,7 @@ const config = {
     '@/features': path.resolve(__dirname, '..', 'src/features'),
     '@/store': path.resolve(__dirname, '..', 'src/store'),
   },
-  plugins: [],
+  plugins: ['taro-plugin-tailwind'],
   defineConstants: {},
   copy: {
     patterns: [],
@@ -47,6 +47,7 @@ const config = {
   h5: {
     publicPath: '/',
     staticDirectory: 'static',
+    esnextModules: ['taro-ui'],
     postcss: {
       autoprefixer: {
         enable: true,

@@ -1,6 +1,7 @@
 import React from 'react'
 import { RootState } from '@/store'
-import { View, Text, Button } from '@tarojs/components'
+import { View, Text } from '@tarojs/components'
+import { AtButton } from 'taro-ui'
 import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment } from './index.store'
 
@@ -10,19 +11,23 @@ export default function Counter() {
 
   return (
     <View className='space-x-2 flex items-center'>
-      <Button
+      <AtButton
+        type='primary'
+        size='small'
         aria-label='Increment value'
         onClick={() => dispatch(increment())}
       >
         Increment
-      </Button>
+      </AtButton>
       <Text>{count}</Text>
-      <Button
+      <AtButton
+        type='primary'
+        size='small'
         aria-label='Decrement value'
         onClick={() => dispatch(decrement())}
       >
         Decrement
-      </Button>
+      </AtButton>
     </View>
   )
 }
